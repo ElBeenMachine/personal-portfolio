@@ -4,7 +4,7 @@ import Hero from "@/components/Homepage/Hero.js";
 export default function Home() {
     return (
         <>
-            <Layout>
+            <Layout pageTitle="My Portfolio">
                 <Hero />
             </Layout>
         </>

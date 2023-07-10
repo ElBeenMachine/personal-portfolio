@@ -1,12 +1,10 @@
 import Head from "next/head";
-// import Navbar from "./Navigation/Navbar";
 import { Box } from "@chakra-ui/layout";
-// import Footer from "./Footer";
 import { useRouter } from "next/router";
 
-const Layout = (props) => {
+const EmptyLayout = (props) => {
     const router = useRouter();
-    const pageDescription = "This site is under construction. Please try again later.";
+    const pageDescription = "A portfolio showing demonstrating my programming ability across a variety of projects.";
     const pageImage = "https://www.beenhamow.co.uk/img/metadata.png";
     const pageURL = `https://www.beenhamow.co.uk${router.pathname}`;
 
@@ -43,14 +41,12 @@ const Layout = (props) => {
                 <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
             </Head>
             <div>
-                {/* <Navbar /> */}
                 <Box>
                     {props.children}
                 </Box>
-                {/* <Footer /> */}
             </div>
         </div>
     )
 }
 
-export default Layout;
+export default EmptyLayout;

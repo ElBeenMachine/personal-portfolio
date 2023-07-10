@@ -13,8 +13,23 @@ const nextConfig = {
             },
             {
                 source: "/discord",
-                destination: "/redirect?r=https://discord.gg/uB4dcpsMSR",
-                permanent: false
+                destination: "https://discord.gg/uB4dcpsMSR",
+                permanent: true
+            },
+            {
+                source: "/instagram",
+                destination: "https://instagram.com/BeenhamOW",
+                permanent: true
+            },
+            {
+                source: "/twitter",
+                destination: "https://twitter.com/ElBeenMachine",
+                permanent: true
+            },
+            {
+                source: "/threads",
+                destination: "https://threads.net/@beenhamow",
+                permanent: true
             }
         ]
     }
